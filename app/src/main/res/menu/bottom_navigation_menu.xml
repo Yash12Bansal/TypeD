@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/daily_log"
+        android:enabled="true"
+        android:icon="@drawable/homefinal"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/exercise"
+        android:enabled="true"
+        android:icon="@drawable/fitness_n"
+        android:title="Exercise"
+        />
+    <item
+        android:id="@+id/prediction"
+        android:enabled="true"
+        android:icon="@drawable/salad_n"
+        android:title="Predict/Food"
+        />
+    <item
+        android:id="@+id/insulin"
+        android:enabled="true"
+        android:icon="@drawable/syringe_n"
+        android:title="Insulin"
+        />
+    <item
+        android:id="@+id/bg_value"
+        android:enabled="true"
+        android:icon="@drawable/diabetes_n"
+        android:title="BG"
+        />
+</menu>

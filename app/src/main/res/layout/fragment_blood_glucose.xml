@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:background="@color/back"
+    android:id="@+id/screen"
+    android:layout_marginBottom="?android:attr/actionBarSize"
+
+    android:orientation="vertical"
+    tools:context=".Fragments.BloodGlucose">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:layout_marginLeft="30dp"-->
+
+        <!--            android:layout_marginRight="30dp"-->
+        <!--            android:layout_marginTop="25dp"-->
+
+        <!--            android:background="@drawable/bg2"-->
+        <!--            />-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="4dp"-->
+        <!--            android:layout_marginLeft="25dp"-->
+        <!--            android:layout_marginRight="25dp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:background="@color/white"></LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+
+
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/balsamiq_sans"
+                android:text="Blood Glucose Details"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:id="@+id/dobCard"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--                <androidx.cardview.widget.CardView-->
+                    <!--                    android:layout_width="40dp"-->
+                    <!--                    android:layout_height="match_parent"-->
+
+                    <!--                    android:layout_marginLeft="20dp"-->
+                    <!--                    android:layout_marginTop="10dp"-->
+                    <!--                    android:layout_marginBottom="10dp"-->
+                    <!--                    app:cardCornerRadius="10dp"-->
+
+                    <!--                    >-->
+
+                    <!--                    <ImageView-->
+                    <!--                        android:layout_width="30dp"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:src="@drawable/age"-->
+                    <!--                        android:layout_marginLeft="20dp"-->
+                    <!--                        android:layout_marginTop="10dp"-->
+                    <!--                        android:layout_marginBottom="10dp"-->
+
+                    <!--                        />-->
+
+                    <!--                </androidx.cardview.widget.CardView>-->
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/value"
+                        android:inputType="numberDecimal"
+                        android:fontFamily="@font/balsamiq_sans"
+
+                        android:background="@android:color/transparent"
+                        android:hint="Blood Glucose (mg/dl)" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_marginLeft="25dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="25dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:cardBackgroundColor="@color/front"-->
+<!--                app:cardCornerRadius="20dp"-->
+
+<!--                app:cardElevation="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:gravity="center_vertical"-->
+
+<!--                        android:text="BG (mg/dl)"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="17sp"-->
+<!--                        />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/value"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:hint="Enter Value"-->
+<!--                        android:textColor="@color/black"-->
+
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1"-->
+
+<!--                        android:inputType="numberDecimal" />-->
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/blood_glucose"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/front"
+                app:cardCornerRadius="20dp"
+
+                app:cardElevation="10dp">
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@color/icons_background"
+                        app:cardCornerRadius="10dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/bgfinal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/blood_glucose_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/balsamiq_sans"
+
+                        android:text="Blood Glucose Type"
+                        android:textColor="@color/black"
+
+                        android:textSize="17sp"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="4dp"-->
+            <!--                android:layout_marginBottom="15dp"-->
+            <!--                android:layout_marginLeft="25dp"-->
+            <!--                android:layout_marginRight="25dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@color/white"></LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:layout_marginLeft="25dp"-->
+            <!--                android:layout_marginRight="25dp"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <ImageButton-->
+
+            <!--                    android:layout_width="30dp"-->
+            <!--                    android:layout_height="30dp"-->
+            <!--                    android:background="@drawable/date" />-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/date_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/front"
+                app:cardCornerRadius="20dp"
+
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@color/icons_background"
+                        app:cardCornerRadius="10dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/calendarf2" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:id="@+id/date_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Date"
+                        android:fontFamily="@font/balsamiq_sans"
+
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/date_cross"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/cross" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_marginLeft="25dp"-->
+            <!--                android:layout_marginRight="25dp"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <ImageButton-->
+
+            <!--                    android:layout_width="28dp"-->
+            <!--                    android:layout_height="28dp"-->
+            <!--                    android:background="@drawable/time" />-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/time_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/front"
+                app:cardCornerRadius="20dp"
+
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@color/icons_background"
+                        app:cardCornerRadius="10dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+
+                            android:src="@drawable/timefinal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:id="@+id/time_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:fontFamily="@font/balsamiq_sans"
+
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/time_cross"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/cross" />
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+
+<!--            <Button-->
+<!--                android:id="@+id/submit_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="monospace"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:backgroundTint="#374E8B"-->
+<!--                android:text="Submit" />-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/submit_button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/card_blue"
+                app:cardCornerRadius="25dp"
+                android:layout_marginBottom="20dp"
+                app:cardElevation="10dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <!--        <LinearLayout-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_gravity="end"-->
+                <!--            >-->
+                <!--        <androidx.cardview.widget.CardView-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_margin="20dp"-->
+                <!--            g-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            >-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Submit"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <!--        </androidx.cardview.widget.CardView>-->
+                <!--        </LinearLayout>-->
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.razzaghimahdi78.dotsloading.linear.LoadingWavy
+            android:id="@+id/rotateloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dots_count="3"
+            app:dots_color="@color/loading"
+            app:dots_duration="500"
+            app:dots_size="10dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </FrameLayout>
+
+</FrameLayout>

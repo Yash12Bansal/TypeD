@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_nav_graph"
+    app:startDestination="@id/details1">
+
+    <fragment
+        android:id="@+id/details1"
+        android:name="com.alpha.typed.Fragments.Details1"
+        android:label="fragment_details1"
+        tools:layout="@layout/fragment_details1" >
+        <action
+            android:id="@+id/action_details1_to_details2"
+            app:destination="@id/details2"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/pop_fade_in"
+            app:popExitAnim="@anim/pop_fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/details2"
+        android:name="com.alpha.typed.Fragments.Details2"
+        android:label="fragment_details2"
+        tools:layout="@layout/fragment_details2" >
+        <action
+            android:id="@+id/action_details2_to_details3"
+            app:destination="@id/details3"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/pop_fade_in"
+            app:popExitAnim="@anim/pop_fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/details3"
+        android:name="com.alpha.typed.Fragments.Details3"
+        android:label="fragment_details3"
+        tools:layout="@layout/fragment_details3" >
+        <action
+            android:id="@+id/action_details3_to_details4"
+            app:destination="@id/details4"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/pop_fade_in"
+            app:popExitAnim="@anim/pop_fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/details4"
+        android:name="com.alpha.typed.Fragments.Details4"
+        android:label="fragment_details4"
+        tools:layout="@layout/fragment_details4" >
+        <action
+            android:id="@+id/action_details4_to_details5"
+            app:destination="@id/details5"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/pop_fade_in"
+            app:popExitAnim="@anim/pop_fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/details5"
+        android:name="com.alpha.typed.Fragments.Details5"
+        android:label="fragment_details5"
+        tools:layout="@layout/fragment_details5" >
+        <action
+            android:id="@+id/action_details5_to_details6"
+            app:destination="@id/details6"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/pop_fade_in"
+            app:popExitAnim="@anim/pop_fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/details6"
+        android:name="com.alpha.typed.Fragments.Details6"
+        android:label="fragment_details6"
+        tools:layout="@layout/fragment_details6" >
+        <action
+            android:id="@+id/action_details6_to_details7"
+            app:destination="@id/details7"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/pop_fade_in"
+            app:popExitAnim="@anim/pop_fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/details7"
+        android:name="com.alpha.typed.Fragments.Details7"
+        android:label="fragment_details7"
+        tools:layout="@layout/fragment_details7" >
+        <action
+            android:id="@+id/action_details7_to_details8"
+            app:destination="@id/details8"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/pop_fade_in"
+            app:popExitAnim="@anim/pop_fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/details8"
+        android:name="com.alpha.typed.Fragments.Details8"
+        android:label="fragment_details8"
+        tools:layout="@layout/fragment_details8" >
+        <action
+            android:id="@+id/action_details8_to_details9"
+            app:destination="@id/details9" />
+    </fragment>
+    <fragment
+        android:id="@+id/details9"
+        android:name="com.alpha.typed.Fragments.Details9"
+        android:label="fragment_details9"
+        tools:layout="@layout/fragment_details9" >
+        <action
+            android:id="@+id/action_details9_to_details10"
+            app:destination="@id/details10" />
+    </fragment>
+    <fragment
+        android:id="@+id/details10"
+        android:name="com.alpha.typed.Fragments.Details10"
+        android:label="fragment_details10"
+        tools:layout="@layout/fragment_details10" />
+</navigation>

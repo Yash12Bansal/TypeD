@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="downloadBlack">#0A0A0A</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="smokewhite">#F5F5F5</color>
+
+    <color name="details_back">#1488E4</color>
+    <color name="loading">#676767</color>
+    <color name="back">@color/white</color>
+<!--    <color name="card_blue">#2B4894</color>-->
+<!--    <color name="card_blue">#6890FA</color>-->
+    <color name="tour">#0E1A7E</color>
+    <color name="card_blue">#E8EDFC</color>
+
+    <color name="front">@color/white</color>
+<!--    <color name="icons_background">#E8EDFC</color>-->
+        <color name="icons_background">#E8EDFC</color>
+
+
+    <color name="grey">#8A373734</color>
+    <color name="c1">#0E1A7E</color>
+    <color name="c2">#3F4043</color>
+
+
+</resources>

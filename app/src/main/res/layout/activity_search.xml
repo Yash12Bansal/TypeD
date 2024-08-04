@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activities.Search">
+<!--    <ProgressBar-->
+<!--        android:id="@+id/rotateloading"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:elevation="15dp"-->
+<!--        app:layout_constraintVertical_chainStyle="spread_inside"-->
+<!--        />-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--        app:popupTheme="@style/AppTheme.PopupOverlay"-->
+        <!--        ECCFFA   CFDBFA-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/card_blue"
+            android:label="Carbometer">
+            <!--            <ImageView-->
+            <!--                xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--                android:id="@+id/arrowImageView"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:src="@drawable/ic_baseline_arrow_outward_24" />-->
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="?android:attr/listPreferredItemPaddingStart"
+            android:layout_marginRight="?android:attr/listPreferredItemPaddingEnd"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
+            android:visibility="gone"
+            android:id="@+id/suggest_list_card"
+            app:cardCornerRadius="20dp">
+
+        <ListView
+            android:id="@+id/suggestlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="20dp"
+
+            android:background="@android:color/transparent"
+            >
+        </ListView>
+        </com.google.android.material.card.MaterialCardView>
+        <ListView
+            android:id="@+id/list_of_food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            >
+
+        </ListView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/screen"
+            >
+            <com.razzaghimahdi78.dotsloading.linear.LoadingWavy
+                android:id="@+id/rotateloading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dots_count="3"
+                app:dots_color="@color/loading"
+                app:dots_duration="500"
+                app:dots_size="10dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

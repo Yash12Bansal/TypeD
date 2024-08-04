@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Details9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/balsamiq_sans"
+                android:text="Create new account"
+                android:textSize="25sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 9 of 10"
+                android:textColor="@color/grey"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="30dp"
+                android:textSize="15sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Do you know your ICR values for each meal?"
+                android:textSize="20sp"
+                >
+
+            </TextView>
+
+
+            <RadioGroup
+                android:id="@+id/icr_known"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/yes"
+                    android:textSize="20sp"
+                    android:checked="true"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="No"
+                    android:buttonTint="@color/black"
+                    android:id="@+id/no"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            </RadioGroup>
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:layout_marginTop="30dp"-->
+
+<!--                android:id="@+id/submit"-->
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/black"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Submit"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="20sp"-->
+
+<!--                    />-->
+<!--            </androidx.cardview.widget.CardView>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/icr_values"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Breakfast ICR: "
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:id="@+id/breakfast_icr_card"
+                    android:layout_marginLeft="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <!--                <androidx.cardview.widget.CardView-->
+                        <!--                    android:layout_width="40dp"-->
+                        <!--                    android:layout_height="match_parent"-->
+
+                        <!--                    android:layout_marginLeft="20dp"-->
+                        <!--                    android:layout_marginTop="10dp"-->
+                        <!--                    android:layout_marginBottom="10dp"-->
+                        <!--                    app:cardCornerRadius="10dp"-->
+
+                        <!--                    >-->
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="30dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:src="@drawable/phone_call"-->
+                        <!--                        android:layout_marginLeft="20dp"-->
+                        <!--                        android:layout_marginTop="10dp"-->
+                        <!--                        android:layout_marginBottom="10dp"-->
+
+                        <!--                        />-->
+
+                        <!--                </androidx.cardview.widget.CardView>-->
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/breakfast_icr_text"
+                            android:inputType="numberDecimal"
+                            android:background="@android:color/transparent"
+                            android:hint="Value" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Lunch ICR: "
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:id="@+id/lunch_icr_card"
+                    android:layout_marginLeft="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <!--                <androidx.cardview.widget.CardView-->
+                        <!--                    android:layout_width="40dp"-->
+                        <!--                    android:layout_height="match_parent"-->
+
+                        <!--                    android:layout_marginLeft="20dp"-->
+                        <!--                    android:layout_marginTop="10dp"-->
+                        <!--                    android:layout_marginBottom="10dp"-->
+                        <!--                    app:cardCornerRadius="10dp"-->
+
+                        <!--                    >-->
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="30dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:src="@drawable/phone_call"-->
+                        <!--                        android:layout_marginLeft="20dp"-->
+                        <!--                        android:layout_marginTop="10dp"-->
+                        <!--                        android:layout_marginBottom="10dp"-->
+
+                        <!--                        />-->
+
+                        <!--                </androidx.cardview.widget.CardView>-->
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/lunch_icr_text"
+                            android:inputType="numberDecimal"
+                            android:background="@android:color/transparent"
+                            android:hint="Value" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_weight="1"
+                    android:text="Snacks ICR: "
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:id="@+id/snack_icr_card"
+                    android:layout_marginLeft="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <!--                <androidx.cardview.widget.CardView-->
+                        <!--                    android:layout_width="40dp"-->
+                        <!--                    android:layout_height="match_parent"-->
+
+                        <!--                    android:layout_marginLeft="20dp"-->
+                        <!--                    android:layout_marginTop="10dp"-->
+                        <!--                    android:layout_marginBottom="10dp"-->
+                        <!--                    app:cardCornerRadius="10dp"-->
+
+                        <!--                    >-->
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="30dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:src="@drawable/phone_call"-->
+                        <!--                        android:layout_marginLeft="20dp"-->
+                        <!--                        android:layout_marginTop="10dp"-->
+                        <!--                        android:layout_marginBottom="10dp"-->
+
+                        <!--                        />-->
+
+                        <!--                </androidx.cardview.widget.CardView>-->
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/snack_icr_text"
+                            android:inputType="numberDecimal"
+                            android:background="@android:color/transparent"
+                            android:hint="Value" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Dinner ICR: "
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:id="@+id/dinner_icr_card"
+                    android:layout_marginLeft="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <!--                <androidx.cardview.widget.CardView-->
+                        <!--                    android:layout_width="40dp"-->
+                        <!--                    android:layout_height="match_parent"-->
+
+                        <!--                    android:layout_marginLeft="20dp"-->
+                        <!--                    android:layout_marginTop="10dp"-->
+                        <!--                    android:layout_marginBottom="10dp"-->
+                        <!--                    app:cardCornerRadius="10dp"-->
+
+                        <!--                    >-->
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="30dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:src="@drawable/phone_call"-->
+                        <!--                        android:layout_marginLeft="20dp"-->
+                        <!--                        android:layout_marginTop="10dp"-->
+                        <!--                        android:layout_marginBottom="10dp"-->
+
+                        <!--                        />-->
+
+                        <!--                </androidx.cardview.widget.CardView>-->
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/dinner_icr_text"
+                            android:inputType="numberDecimal"
+                            android:background="@android:color/transparent"
+                            android:hint="Value" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
